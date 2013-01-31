@@ -38,8 +38,8 @@ public class RectangleAreaCalculatorController extends HttpServlet {
         double width = Double.valueOf(strWidth);
         
         double area = length * width;
-        String strArea = String.valueOf(area);
-        request.setAttribute("area", strArea);
+        
+        request.setAttribute("area", area);
         
         RequestDispatcher dispatcher = 
                 getServletContext().getRequestDispatcher(destination);

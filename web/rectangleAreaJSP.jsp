@@ -12,6 +12,6 @@
         <title>Rectangle Area JSP Page</title>
     </head>
     <body>
-        <h1>The Area of your Rectangle is: <% %></h1>
+        <h1>The Area of your Rectangle is: ${area} </h1>
     </body>
 </html>
