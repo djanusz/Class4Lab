@@ -23,7 +23,7 @@
             </div>
         </form>
         <hr>
-        <form id="circle" name="circle" method="POST" action="">
+        <form id="circle" name="circle" method="POST" action="CircleAreaCalculatorController">
             <div>
                 <h3>Circle</h3>
                 Radius: <input type="text" name="radius"><br>
