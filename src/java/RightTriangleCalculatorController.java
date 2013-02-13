@@ -8,11 +8,11 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Description: This class calculates the area of a rectangle.
+ * Description: This class calculates the hypotenuse.
  * @author David Janusz
  */
-public class RectangleAreaCalculatorController extends HttpServlet {
-    private static final String destination = "/rectangleAreaJSP.jsp";
+public class RightTriangleCalculatorController extends HttpServlet {
+    private static final String destination = "/rightTriangleJSP.jsp";
     /**
      * Processes requests for both HTTP
      * <code>GET</code> and
@@ -28,19 +28,20 @@ public class RectangleAreaCalculatorController extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         PrintWriter out = response.getWriter();
         
-        String strLength = request.getParameter("length");
-        String strWidth = request.getParameter("width");
-        double length = Double.valueOf(strLength);
-        double width = Double.valueOf(strWidth);
+        String strLegA = request.getParameter("legA");
+        String strLegB = request.getParameter("legB");
+        double legA = Double.valueOf(strLegA);
+        double legB = Double.valueOf(strLegB);
         
-        double area = length * width;
+        double hypotenuseSquared = (legA * legA) + (legB * legB);
+        double hypotenuse = Math.sqrt(hypotenuseSquared);
         
-        request.setAttribute("area", area);
+        request.setAttribute("hypotenuse", hypotenuse);
         
         RequestDispatcher dispatcher = 
                 getServletContext().getRequestDispatcher(destination);
               dispatcher.forward(request, response);  
-              
+        
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

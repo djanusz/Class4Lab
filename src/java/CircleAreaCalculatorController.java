@@ -1,7 +1,3 @@
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -12,8 +8,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- *
- * @author David
+ * Description: This class calculates the area of circle.
+ * @author David Janusz
  */
 public class CircleAreaCalculatorController extends HttpServlet {
     private static final String destination = "/circleAreaJSP.jsp";

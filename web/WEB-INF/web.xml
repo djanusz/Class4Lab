@@ -12,6 +12,10 @@
         <servlet-name>CircleAreaCalculatorController</servlet-name>
         <servlet-class>CircleAreaCalculatorController</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>RightTriangleCalculatorController</servlet-name>
+        <servlet-class>RightTriangleCalculatorController</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AreaCalculatorController</servlet-name>
         <url-pattern>/AreaCalculatorController</url-pattern>
@@ -23,6 +27,10 @@
     <servlet-mapping>
         <servlet-name>CircleAreaCalculatorController</servlet-name>
         <url-pattern>/CircleAreaCalculatorController</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RightTriangleCalculatorController</servlet-name>
+        <url-pattern>/RightTriangleCalculatorController</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
